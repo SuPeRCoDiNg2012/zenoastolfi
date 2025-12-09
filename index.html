@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zeno Astolfi">
+    <meta name="description" content="Sito personale di Zeno Astolfi: programmazione, musica, orienteering ed escursionismo">
+    <meta name="keywords" content="Zeno Astolfi, programmazione, musica, orienteering, escursionismo, web development, Godot, MuseScore">
+    <title>Zeno Astolfi - Sito Personale</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <!-- Header -->
+    <header role="banner" aria-label="Intestazione principale">
+        <div class="header-content">
+            <h1>Zeno Astolfi</h1>
+            <p class="subtitle">Benvenuti nel mio sito personale!</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main">
+        <!-- Sezione Passioni -->
+        <section id="hobby" aria-labelledby="hobby-title">
+            <h2 id="hobby-title">Le mie passioni</h2>
+            <ul class="passions-list">
+                <li class="passion-item">
+                    <strong>Programmazione</strong>
+                    <p>Amo creare siti web e videogiochi con Godot</p>
+                </li>
+                <li class="passion-item">
+                    <strong>Musica</strong>
+                    <p>Suono la chitarra e compongo musica con MuseScore</p>
+                </li>
+                <li class="passion-item">
+                    <strong>Orienteering e Escursionismo</strong>
+                    <p>Mi piace camminare ed esplorare la natura e partecipare a gare di Orienteering</p>
+                </li>
+            </ul>
+        </section>
+
+        <hr aria-hidden="true">
+
+        <!-- Sezione Progetti -->
+        <section id="progetti" aria-labelledby="progetti-title">
+            <h2 id="progetti-title">I miei progetti</h2>
+            <ul class="projects-list">
+                <li><a href="https://makè.my.canva.site" target="_blank" rel="noopener noreferrer" aria-label="Visita il sito Makè (si apre in una nuova finestra)">Sito Makè</a></li>
+                <li><a href="https://supercoding2012.itch.io/" target="_blank" rel="noopener noreferrer" aria-label="Vedi i miei videogiochi su itch.io (si apre in una nuova finestra)">Videogiochi</a></li>
+                <li><a href="https://musescore.com/user/76681432" target="_blank" rel="noopener noreferrer" aria-label="Ascolta la mia musica su MuseScore (si apre in una nuova finestra)">Musica</a></li>
+                <li><a href="https://www.fiso.it/tesserato/EM4310/2025" target="_blank" rel="noopener noreferrer" aria-label="Profilo FISO Orienteering (si apre in una nuova finestra)">Orienteering</a></li>
+                <li><a href="https://www.strava.com/athletes/145855381" target="_blank" rel="noopener noreferrer" aria-label="Profilo Strava attività (si apre in una nuova finestra)">Strava</a></li>
+            </ul>
+        </section>
+
+        <hr aria-hidden="true">
+
+        <!-- Sezione Escursioni -->
+        <section id="escursioni" aria-labelledby="escursioni-title">
+            <h2 id="escursioni-title">Le mie escursioni</h2>
+            
+            <article class="hike">
+                <h3>Escursione a Cima d'Asta</h3>
+                <div class="hike-info">
+                    <p class="info-escursioni">
+                        <span class="stat">Tempo: 5h 3m</span> • 
+                        <span class="stat">Distanza: 15,08km</span> • 
+                        <span class="stat">Dislivello: 1.046m</span>
+                    </p>
+                    
+                    <div class="media-container">
+                        <video width="320" height="240" controls 
+                               aria-label="Video dell'escursione a Cima d'Asta">
+                            <source src="img/0706.mp4" type="video/mp4">
+                            <track kind="captions" src="#" srclang="it" label="Italiano">
+                            Il tuo browser non supporta la riproduzione di video.
+                        </video>
+                        
+                        <iframe 
+                            title="Mappa escursione Cima d'Asta"
+                            allowfullscreen 
+                            allow="geolocation"
+                            loading="lazy"
+                            src="//umap.openstreetmap.fr/it/map/cima-dasta_1315350?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=none&captionBar=false&captionMenus=false&homeControl=false&fullscreenControl=false&captionControl=false&locateControl=false&measureControl=false&editinosmControl=false&printControl=false">
+                        </iframe>
+                    </div>
+                </div>
+            </article>
+
+            <article class="hike">
+                <h3>Via degli Dei</h3>
+                <div class="hike-info">
+                    <p class="info-escursioni">
+                        <span class="stat">Tempo: 6 giorni</span> • 
+                        <span class="stat">Distanza: 130km</span> • 
+                        <span class="stat">Dislivello: 5.000m</span>
+                    </p>
+                    
+                    <iframe 
+                        title="Mappa Via degli Dei"
+                        allowfullscreen 
+                        allow="geolocation"
+                        loading="lazy"
+                        src="//umap.openstreetmap.fr/it/map/via-degli-dei-2025_1315345?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=none&captionBar=false&captionMenus=false&homeControl=false&fullscreenControl=false&captionControl=false&locateControl=false&measureControl=false&editinosmControl=false&printControl=false">
+                    </iframe>
+                </div>
+            </article>
+            
+            <div class="more-hikes">
+                <a href="escursionismo/escursioni.html" class="btn-more">
+                    Vedi tutte le escursioni →
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo" aria-label="Informazioni di contatto">
+        <section id="contatti" aria-labelledby="contatti-title">
+            <h2 id="contatti-title">Contatti</h2>
+            <p>
+                Email: 
+                <a href="mailto:zeno.astolfi12@gmail.com" aria-label="Invia email a Zeno Astolfi">
+                    zeno.astolfi12@gmail.com
+                </a>
+            </p>
+            <p class="copyright">
+                &copy; 2024 Zeno Astolfi. Tutti i diritti riservati.
+            </p>
+        </section>
+    </footer>
+</body>
+</html>
